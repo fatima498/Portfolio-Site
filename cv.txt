@@ -1,0 +1,31 @@
+Introduction:
+
+[Name: Fatima]
+[Freelance/Remote]
+Front-End Developer
+
+
+Contact Information:
+Email: [ nexonsolutions2@gmail.com ]
+Location: [Punjab, Pakistan]
+LinkedIn: [https://www.linkedin.com/in/fatima-319ba3202/]
+GitHub: [https://github.com/fatima498/web-dev]
+
+
+Summary:
+
+Front-end developer with a passion for creating interactive and user-friendly web interfaces. Skilled in HTML, CSS, JavaScript, Tailwind CSS, and React, with a focus on responsive design and user experience. Demonstrated ability to deliver high-quality projects and meet client expectations through problem-solving, effective communication, and a strong eye for design.
+
+
+Technical Skills:
+
+Languages: HTML, CSS, JavaScript
+Frameworks & Libraries: React, Tailwind CSS
+Tools & Technologies: Git, GitHub, npm,  Visual Studio Code
+Responsive Design: CSS Flexbox, CSS Grid, Media Queries
+Version Control: Git, GitHub
+
+
+
+ Degrees in [Computer Science, Maths]
+

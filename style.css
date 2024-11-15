@@ -1,0 +1,646 @@
+:root {
+  --primary-color: #3a0ca3;
+  --secondary-color: #7209b7;
+  --bg-color: #f3f4f6;
+  --text-color: #1a1a1a;
+  --font: "Poppins", sans-serif;
+  --card-bg: #fff;
+  --btn-bg: #3a0ca3;
+  --btn-hover: #7209b7;
+  --font: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* Ensure no scrollbars */
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--bg-color);
+  overflow-y: scroll;
+}
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 170px;
+  background-color: #d3d3d3;
+  height: 100vh;
+  padding: 20px;
+  position: fixed;
+  /* Keep the sidebar fixed */
+  left: 0;
+  top: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar img {
+  display: block;
+  margin: 0 auto 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+  /* Reduced margin to fit all links */
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  padding: 15px 25px;
+  display: block;
+  color: #4b0082;
+  font-weight: 600;
+  font-size: 16px;
+  /* Reduced font size */
+}
+
+/* Main content area */
+.main {
+  margin-left: 170px;
+  padding: 20px;
+  width: calc(100% - 170px);
+}
+
+.intro-content {
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+h1 .name {
+  font-weight: bold;
+  color: #4b0082;
+}
+
+h3 {
+  font-size: 30px;
+  align-items: center;
+  margin: 80px;
+  font-weight: bold;
+  color: #4b0082;
+}
+
+p.title {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.buttons .btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.primary-btn {
+  background-color: #4b0082;
+}
+
+.secondary-btn {
+  background-color: #7f00ff;
+}
+
+.buttons .btn:hover {
+  opacity: 0.9;
+}
+
+/* Image Container */
+.image-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.intro-image {
+  width: 46%;
+  height: auto;
+}
+
+/* Contact Form Styling */
+
+.contact-form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+h2 {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 16px;
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+button {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+.trust-message {
+  margin-top: 1px;
+  margin-bottom: 15px;
+  font-size: 10px;
+  color: gray;
+  text-align: left;
+  line-height: 1.5;
+}
+
+@media (max-width: 530px) {
+  .contact-form-container {
+    padding: 15px;
+  }
+
+  input {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .trust-message {
+    font-size: 11px;
+  }
+}
+
+/* My_Introduction section */
+
+.my-intro-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.intro-content {
+  max-width: 600px;
+}
+
+.intro-content h1 {
+  font-size: 48px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.intro-content h1 span {
+  color: var(--highlight-color);
+}
+
+.intro-content p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.intro-content .btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 30px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.intro-content .btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.intro-img {
+  flex-shrink: 0;
+}
+
+.intro-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .my-intro-section {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .intro-content h1 {
+    font-size: 40px;
+  }
+
+  .intro-content p {
+    font-size: 16px;
+  }
+
+  .intro-img {
+    margin-top: 20px;
+  }
+
+  .intro-content .btn {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  .my-intro-section {
+    padding: 40px 20px;
+  }
+
+  .intro-content h1 {
+    font-size: 34px;
+  }
+
+  .intro-content p {
+    font-size: 14px;
+  }
+
+  .intro-content .btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+/* Projects Section */
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  /* Ensure the container takes up full height */
+}
+
+.main {
+  width: 100%;
+  padding: 20px;
+  overflow-y: auto;
+  /* Enable scrolling within the main content if needed */
+}
+
+.projects-section {
+  padding: 60px 40px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h1 {
+  font-size: 36px;
+  color: var(--primary-color);
+}
+
+.section-header p {
+  font-size: 18px;
+  color: #555;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.project-card {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 30%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.project-details {
+  padding: 20px;
+  text-align: center;
+}
+
+.project-details h2 {
+  font-size: 22px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.project-details p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 30px;
+  background-color: var(--btn-bg);
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover);
+}
+
+.github-btn {
+  background-color: var(--secondary-color);
+}
+
+.github-btn:hover {
+  background-color: var(--primary-color);
+}
+
+/* Services section */
+
+.services-section {
+  padding: 60px 40px;
+  background-color: var(--card-bg);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h1 {
+  font-size: 36px;
+  color: var(--primary-color);
+}
+
+.section-header p {
+  font-size: 18px;
+  color: #555;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.service-card {
+  background-color: var(--service-bg);
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  width: 30%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.service-card h2 {
+  font-size: 22px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 16px;
+  color: #666;
+}
+
+.skills {
+  margin-top: 30px;
+  text-align: center;
+  /* Center the entire section */
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  /* Center the skill buttons */
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.skill-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.skill-btn:hover {
+  background-color: #0056b3;
+}
+
+.skills-display {
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+
+.skill-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 120px;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  visibility: hidden;
+}
+
+.skill-image.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media screen and (max-width: 600px) {
+  .sidebarMenu {
+    display: none;
+  }
+
+  .sidebar {
+    width: 34%;
+    font-size: 23px;
+    padding: 0px 5px;
+  }
+
+  .sidebar .profile-img {
+    height: 60px;
+    width: 60px;
+    margin: 23px;
+  }
+
+  .main .intro-content h1 {
+    font-size: 24px;
+    padding: 5px 0px;
+  }
+
+  .main .intro-content p {
+    font-size: 12px;
+  }
+
+  .main .intro-content .buttons {
+    font-size: 5px;
+    flex-direction: column;
+  }
+
+  .main .intro-content .buttons a {
+    font-size: 9px;
+    margin: 5px 2px;
+  }
+
+  .main .image-container img {
+    height: 159px;
+    width: 159px;
+  }
+
+  /* project section responsive */
+  .container .main {
+    width: 120%;
+    height: 100%;
+    margin: 3px;
+    overflow-x: auto;
+  }
+
+  .container .sidebar {
+    display: none;
+  }
+
+  .container .main .projects-section h1 {
+    font-size: 15px;
+  }
+
+  .container .main .projects-section p {
+    font-size: 13px;
+    align-items: center;
+  }
+
+  .container .main .projects-section .project-card h3 p {
+    font-size: 1px;
+    align-items: center;
+  }
+
+  .main .projects-section {
+    width: 200%;
+    padding: 13px;
+  }
+
+  .main .section-header .project-card {
+    flex-direction: column;
+    height: 43px;
+  }
+}
